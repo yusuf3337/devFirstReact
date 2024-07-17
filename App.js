@@ -1,9 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Image, Button, StyleSheet, Text, View } from 'react-native';
+import { Image, Button, StyleSheet, Text, View, Alert } from 'react-native';
 
 export default function App() {
   const [count, setCount] = useState(0);
+
+  {/*
+  const alertMe = () => {
+    Alert.alert("Dikkat","Bu islemi onayliyor musunuz",[
+      {
+           text:"Evet",
+           onPress:()=>alert("Silindi!")
+      },
+      {
+           text:"Iptal",
+           onPress:()=>alert("Iptal edildi")
+      },
+    ]);
+
+  };
+*/}
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -66,13 +83,10 @@ export default function App() {
             height:300,
           }}
           />
+          
+
+          <Button title='basmatik' onPress={alertMe}/>
           */}
-
-
-
-
-
-
           
     </View>
 
